@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanfuxiong.findfriends.mapper.UserMapper">
+
+    <select id="countUsers" resultType="int">
+        SELECT COUNT(1)
+        FROM `find_friends`.`user`
+    </select>
+
+    <select id="selectRandomUsers" resultType="User">
+        SELECT user_id,
+               user_username,
+               user_signature,
+               user_sex,
+               user_interest,
+               user_phone_number,
+               user_qq,
+               create_date
+        FROM `find_friends`.`user`
+        ORDER BY RAND() LIMIT 50
+    </select>
+
+    <select id="selectRandomUser" resultType="User">
+        SELECT user_id,
+               user_username,
+               user_signature,
+               user_sex,
+               user_interest,
+               user_phone_number,
+               user_qq,
+               create_date
+        FROM `find_friends`.`user`
+        WHERE user_id != #{id}
+        ORDER BY RAND() LIMIT 1
+    </select>
+
+    <select id="selectUserByInterestAndID" resultType="User">
+        SELECT user_id,
+               user_username,
+               user_signature,
+               user_sex,
+               user_interest,
+               user_phone_number,
+               user_qq,
+               user_profile,
+               create_date
+        FROM `find_friends`.`user`
+        WHERE `user_interest` = #{interest}
+          AND `user_id` != #{id}
+    </select>
+
+    <select id="selectUserByIDAndPassword" resultType="User">
+        SELECT *
+        FROM `find_friends`.`user`
+        WHERE `user_id` = #{id}
+          AND `user_password` = #{password}
+    </select>
+
+    <select id="selectUserByUsername" resultType="User">
+        SELECT user_id,
+               user_username,
+               user_signature,
+               user_sex,
+               user_interest,
+               user_phone_number,
+               user_qq,
+               user_profile,
+               create_date
+        FROM `find_friends`.`user`
+        WHERE `user_username` = #{username}
+    </select>
+
+    <select id="selectUserByID" resultType="User">
+        SELECT user_id,
+               user_username,
+               user_signature,
+               user_sex,
+               user_interest,
+               user_phone_number,
+               user_qq,
+               user_profile,
+               create_date
+        FROM `find_friends`.`user`
+        WHERE `user_id` = #{id}
+    </select>
+
+    <insert id="insertUser">
+        INSERT INTO `find_friends`.`user`
+            (user_id, user_username, user_password, user_sex, user_interest)
+        VALUES (#{id}, #{username}, #{password}, #{sex}, #{interest})
+    </insert>
+
+    <update id="updateUserByID">
+        UPDATE `find_friends`.`user`
+        SET user_username     = #{username},
+            user_signature    = #{signature},
+            user_sex          = #{sex},
+            user_interest     = #{interest},
+            user_phone_number = #{phoneNumber},
+            user_qq           = #{qq},
+            user_profile      = #{profile}
+        WHERE `user_id` = #{id}
+    </update>
+
+    <update id="updatePasswordByID">
+        UPDATE `find_friends`.`user`
+        SET `user_password` = #{newPassword}
+        WHERE `user_id` = #{id}
+          AND `user_password` = #{originPassword}
+    </update>
+
+    <delete id="deleteUserByID">
+        DELETE
+        FROM `find_friends`.`user`
+        WHERE (`user_id` = #{id});
+    </delete>
+
+</mapper>

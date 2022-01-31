@@ -1,0 +1,1170 @@
+﻿<!doctype html>
+<html class="no-js" lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Find Friends</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Icons css -->
+    <link rel="stylesheet" th:href="@{/css/font-icons.css}">
+    <!-- plugins css -->
+    <link rel="stylesheet" th:href="@{/css/plugins.css}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" th:href="@{/css/responsive.css}">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+	<p class="browserupgrade">你正在使用 <strong>过时的</strong> 浏览器。 推荐访问 <a href="https://baidu.com/"> 搜索并升级你的浏览器</a>来改善你的使用体验和安全性</p>
+    <![endif]-->
+
+    <!-- 主体 开始 -->
+    <div class="body-wrapper" id="page-top">
+
+        <!-- 头部 开始 -->
+        <header class="ltn__header-area ltn__header-8  ltn__header-transparent mt-30">
+            <!-- ltn__header-middle-area start -->
+            <div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-theme">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="site-logo">
+                                <a href=""><img th:src="@{/image/logo.png}" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col header-menu-wrap menu-color-white">
+                            <div class="header-menu d-none d-lg-block">
+                                <nav>
+                                    <div class="ltn__main-menu">
+                                        <ul>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                            <li><a class="page-scroll" href="#page-top">主页</a></li>
+                                            <li><a class="page-scroll" href="#ltnr_about">关于</a></li>
+                                            <li><a class="page-scroll" href="#ltnr_screenshot">快照</a></li>
+                                            <li><a class="page-scroll" href="#ltnr_team">开发</a></li>
+                                            <!--<li><a class="page-scroll" href="#ltnr_pricing">资助</a></li>-->
+                                            <!--<li><a class="page-scroll" href="#ltnr_blog">Blog</a></li>-->
+                                            <li><a class="page-scroll" href="#ltnr_contact">联系</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu Button -->
+                        <div class="mobile-menu-toggle menu-btn-white menu-btn-border--- d-lg-none">
+                            <a href="#ltn__utilize-mobile-menu" class="ltn__utilize-toggle">
+                                <svg viewBox="0 0 800 600">
+                                    <path
+                                        d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                        id="top"></path>
+                                    <path d="M300,320 L540,320" id="middle"></path>
+                                    <path
+                                        d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                        id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) ">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ltn__header-middle-area end -->
+        </header>
+        <!-- 头部 结束 -->
+
+        <!-- Utilize Mobile Menu Start -->
+        <div id="ltn__utilize-mobile-menu" class="ltn__utilize ltn__utilize-mobile-menu">
+            <div class="ltn__utilize-menu-inner ltn__scrollbar">
+                <div class="ltn__utilize-menu-head">
+                    <div class="site-logo">
+                        <a href=""><img th:src="@{/image/logo-2.png}" alt="Logo"></a>
+                    </div>
+                    <button class="ltn__utilize-close">×</button>
+                </div>
+                <div class="ltn__utilize-menu-search-form">
+                    <form action="#">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="ltn__utilize-menu">
+                    <ul>
+                        <li><a class="page-scroll" href="#page-top">主页</a></li>
+                        <li><a class="page-scroll" href="#ltnr_about">关于</a></li>
+                        <li><a class="page-scroll" href="#ltnr_screenshot">快照</a></li>
+                        <li><a class="page-scroll" href="#ltnr_team">开发</a></li>
+                        <!--<li><a class="page-scroll" href="#ltnr_pricing">资助</a></li>-->
+                        <!--<li><a class="page-scroll" href="#ltnr_blog">Blog</a></li>-->
+                        <li><a class="page-scroll" href="#ltnr_contact">联系</a></li>
+                    </ul>
+                </div>
+                <div class="ltn__social-media-2">
+                    <ul>
+                        <li><a href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
+                        <li><a href="#" title="Dribbble"><i class="zmdi zmdi-dribbble"></i></a></li>
+                        <li><a href="#" title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
+                        <li><a href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Utilize Mobile Menu End -->
+
+        <div class="ltn__utilize-overlay"></div>
+
+        <!-- SLIDER AREA START -->
+        <div class="ltn__slider-area ltn__slider-style-8 ">
+            <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1">
+                <!-- ltn__slide-item -->
+                <div class="ltn__slide-item ltn__slide-item-8 gradient-color-6">
+                    <div class="ltn__slide-item-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8 align-self-center">
+                                    <div class="slide-item-info pr-30">
+                                        <div class="slide-item-info-inner">
+                                            <h1 class="slide-title white-color">Find Friends App<br>
+                                                For Find Friends</h1>
+                                            <div class="slide-brief">
+                                                <p class="white-color">这是一个免费且开源的App，作者是 万福熊。</p>
+                                            </div>
+                                            <div class="btn-wrapper">
+                                                <a href="/downloadFile?fileName=Find Friends V1.0.0.apk" class="download-btn-1 btn btn-round mt-30">
+                                                    <i class="zmdi zmdi-android"></i>
+                                                    点此下载
+<!--                                                    <b th:text="${apkSize}"></b>-->
+                                                    <b>Android 6.0+ 6.8MB</b>
+                                                    <b text="apkSize"></b>
+                                                </a>
+<!--                                                <a href="" class="download-btn-3 btn btn-round mb-30">-->
+<!--                                                    <i class="zmdi zmdi-windows"></i>-->
+<!--                                                    点此下载-->
+<!--                                                    <b>Windows 7+</b>-->
+<!--                                                </a>-->
+                                                <a href="" class="download-btn-2 btn btn-round mt-30">
+                                                    <i class="zmdi zmdi-apple"></i>
+                                                    暂不支持
+                                                    <b>iOS 作者会尽快跟进</b>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 align-self-center">
+                                    <div class="slide-item-img">
+                                        <div class="slide-item-img-inner">
+                                            <div class="slide-picture">
+                                                <img th:src="@{/image/mylogo.png}" alt="Find Friends">
+                                            </div>
+                                            <div class="slide-img-shape-wrap">
+                                                <div class="slide-img-shape-1">
+                                                    <div class="slide-img-shape-1-bg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER AREA END -->
+
+        <!-- FEATURE AREA START ( Feature - 2) -->
+        <div class="ltn__feature-area pt-80" id="ltnr_feature">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="ltn__feature-item ltn__feature-item-2 text-center">
+                            <div class="ltn__feature-icon">
+                                <span><i class="zmdi zmdi-eye"></i></span>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h6>Stantard</h6>
+                                <p>符合Material Design规范。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="ltn__feature-item ltn__feature-item-2 active text-center">
+                            <div class="ltn__feature-icon">
+                                <span><i class="zmdi zmdi-laptop-mac"></i></span>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h6>Website</h6>
+                                <p>可以通过电脑端浏览器访问Find Friends官网，获取完整的相关信息。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="ltn__feature-item ltn__feature-item-2 text-center">
+                            <div class="ltn__feature-icon">
+                                <span><i class="zmdi zmdi-lamp"></i></span>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h6>UI</h6>
+                                <p>界面与操作经过了作者的精心设计。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FEATURE AREA END -->
+
+        <!-- CUSTOM CONTENT AREA START -->
+        <div class="custom-content-area custom-content-style-2 pt-75 pb-120" id="ltnr_about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area text-center">
+                            <h1 class="section-title">关于App</h1>
+                            <span class="ltn__separate-line">
+                                <span class="separate-icon">
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                </span>
+                            </span>
+                            <p>理念：简化社交</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-self-center">
+                    <div class="col-md-6 align-self-center">
+                        <div class="custom-content-img text-center">
+                            <img th:src="@{/image/about.png}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="custom-content-brief">
+                            <h3 class="text-uppercase mb-20">令人惊叹的App</h3>
+                            <p>你可以在任何安卓手机上使用Find Friends，并且不需要支付费用.</p>
+                            <!--<p>暂无</p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CUSTOM CONTENT AREA END -->
+
+        <!-- COUNTER UP AREA START -->
+        <div class="ltn__counterup-area section-bg-3 bg-image pt-120 pb-60" id="ltnr_counterUp">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="ltn__counterup-item- ltn__counterup-item-2">
+                            <div class="counter-icon">
+                                <i class="zmdi zmdi-format-valign-bottom"></i>
+                            </div>
+                            <div class="counter-info">
+                                <h1><span class="counter">199</span> <span>+</span> </h1>
+                                <h6>下载量</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="ltn__counterup-item- ltn__counterup-item-2">
+                            <div class="counter-icon">
+                                <i class="zmdi zmdi-account-o"></i>
+                            </div>
+                            <div class="counter-info">
+                                <h1><span class="counter">150</span> <span>+</span> </h1>
+                                <h6>满意用户</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="ltn__counterup-item- ltn__counterup-item-2">
+                            <div class="counter-icon">
+                                <i class="zmdi zmdi-star-outline"></i>
+                            </div>
+                            <div class="counter-info">
+                                <h1><span class="counter">110</span> <span>+</span> </h1>
+                                <h6>评价</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="ltn__counterup-item- ltn__counterup-item-2">
+                            <div class="counter-icon">
+                                <i class="zmdi zmdi-thumb-up"></i>
+                            </div>
+                            <div class="counter-info">
+                                <h1><span class="counter">140</span> <span>+</span> </h1>
+                                <h6>推荐</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COUNTER UP AREA END -->
+
+        <!-- VIDEO AREA START -->
+        <!--<div class="ltn__video-bg-img ltn__video-popup-height-5 section-bg-3 bg-image pt-170 pb-150"-->
+        <!--    data-bg="img/bg/2.jpg" id="ltnr_video">-->
+        <!--    <a class="ltn__video-icon-1" href="" data-rel="lightcase:myCollection">-->
+        <!--        <i class="zmdi zmdi-play"></i>-->
+        <!--    </a>-->
+        <!--    <br>-->
+        <!--    <div class="ltn__video-info">-->
+        <!--        <h1 class="white-color">APPS AWESOME VIDEO</h1>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!-- VIDEO AREA END -->
+
+        <!-- IMAGE SLIDER AREA START (img-slider-1) -->
+        <div class="ltn__img-slider-area ltn__img-slider-1 pt-110 pb-100" id="ltnr_screenshot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area text-center">
+                            <h1 class="section-title">快照</h1>
+                            <span class="ltn__separate-line">
+                                <span class="separate-icon">
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                </span>
+                            </span>
+                            <p>赏心悦目的界面</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ltn__image-slider-1-active slick-arrow-1">
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo01.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo01.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo02.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo02.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo03.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo03.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo04.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo04.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo05.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo05.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo06.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo06.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo07.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo07.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__img-slide-item-1">
+                            <a th:href="@{/image/demo08.jpg}" data-rel="lightcase:myCollection">
+                                <img th:src="@{/image/demo08.jpg}" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- IMAGE SLIDER AREA END -->
+
+        <!-- CALL TO ACTION START -->
+        <div class="call-to-action-area call-to-action-1 section-bg-3 bg-image pt-110 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="call-to-action-inner text-center">
+                            <h2>即刻下载并安装</h2>
+                            <p>Find Friends需要在至少Android 6.0的版本上运行。</p>
+                            <div class="btn-wrapper">
+                                <a href="/downloadFile?fileName=Find Friends V1.0.0.apk" class="download-btn-1 btn btn-round mt-30">
+                                    <i class="zmdi zmdi-android"></i>
+                                    点此下载
+<!--                                    <b th:text="${apkSize}"></b>-->
+                                    <b>Android 6.0+ 6.8MB</b>
+                                    <b text="apkSize"></b>
+                                </a>
+                                <!--<a href="" class="download-btn-3 btn btn-round mb-30">-->
+                                <!--    <i class="zmdi zmdi-windows"></i>-->
+                                <!--    点此下载-->
+                                <!--    <b>Windows 7+</b>-->
+                                <!--</a>-->
+                                <a href="" class="download-btn-2 btn btn-round mt-30">
+                                    <i class="zmdi zmdi-apple"></i>
+                                    暂不支持
+                                    <b>iOS 作者会尽快跟进</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CALL TO ACTION END -->
+
+        <!-- TEAM AREA START (Team - 2) -->
+        <div class="ltn__team-area pt-110 pb-90" id="ltnr_team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area text-center">
+                            <h1 class="section-title">开发者</h1>
+                            <span class="ltn__separate-line">
+                                <span class="separate-icon">
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                </span>
+                            </span>
+                            <p>Find Friends 由万福熊独立开发完成。万福熊毕业于长安大学网络工程专业，主攻Java语言，职业为全栈工程师。</p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">-->
+                <!--    <div class="col-lg-3 col-sm-6">-->
+                <!--        <div class="ltn__team-item ltn__team-item-2">-->
+                <!--            <div class="team-img">-->
+                <!--                <img th:src="@{/image/1.jpg}" alt="#">-->
+                <!--            </div>-->
+                <!--            <div class="team-info">-->
+                <!--                <h4>Jacob William</h4>-->
+                <!--                <h6>Manager</h6>-->
+                <!--                <div class="ltn__social-media">-->
+                <!--                    <ul>-->
+                <!--                        <li><a href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>-->
+                <!--                        <li><a href="#" title="Dribbble"><i class="zmdi zmdi-dribbble"></i></a></li>-->
+                <!--                        <li><a href="#" title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>-->
+                <!--                        <li><a href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-lg-3 col-sm-6">-->
+                <!--        <div class="ltn__team-item ltn__team-item-2">-->
+                <!--            <div class="team-img">-->
+                <!--                <img th:src="@{/image/2.jpg}" alt="#">-->
+                <!--            </div>-->
+                <!--            <div class="team-info">-->
+                <!--                <h4>Kelian Anderson</h4>-->
+                <!--                <h6>Director</h6>-->
+                <!--                <div class="ltn__social-media">-->
+                <!--                    <ul>-->
+                <!--                        <li><a href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>-->
+                <!--                        <li><a href="#" title="Dribbble"><i class="zmdi zmdi-dribbble"></i></a></li>-->
+                <!--                        <li><a href="#" title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>-->
+                <!--                        <li><a href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-lg-3 col-sm-6">-->
+                <!--        <div class="ltn__team-item ltn__team-item-2">-->
+                <!--            <div class="team-img">-->
+                <!--                <img th:src="@{/image/3.jpg}" alt="#">-->
+                <!--            </div>-->
+                <!--            <div class="team-info">-->
+                <!--                <h4>James Carter</h4>-->
+                <!--                <h6>Manager</h6>-->
+                <!--                <div class="ltn__social-media">-->
+                <!--                    <ul>-->
+                <!--                        <li><a href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>-->
+                <!--                        <li><a href="#" title="Dribbble"><i class="zmdi zmdi-dribbble"></i></a></li>-->
+                <!--                        <li><a href="#" title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>-->
+                <!--                        <li><a href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-lg-3 col-sm-6">-->
+                <!--        <div class="ltn__team-item ltn__team-item-2">-->
+                <!--            <div class="team-img">-->
+                <!--                <img th:src="@{/image/4.jpg}" alt="#">-->
+                <!--            </div>-->
+                <!--            <div class="team-info">-->
+                <!--                <h4>Adam Joseph</h4>-->
+                <!--                <h6>Manager</h6>-->
+                <!--                <div class="ltn__social-media">-->
+                <!--                    <ul>-->
+                <!--                        <li><a href="#" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>-->
+                <!--                        <li><a href="#" title="Dribbble"><i class="zmdi zmdi-dribbble"></i></a></li>-->
+                <!--                        <li><a href="#" title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>-->
+                <!--                        <li><a href="#" title="Instagram"><i class="zmdi zmdi-instagram"></i></a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <!-- TEAM AREA END -->
+
+        <!-- TESTIMONIAL AREA START (Testimonial - 2) -->
+        <div class="ltn__testimonial-area section-bg-3 bg-image pt-120 pb-40"
+            id="ltnr_testimonial">
+            <div class="container">
+                <div class="row ltn__testimonial-slider-active slick-arrow-1">
+                    <div class="col-lg-12">
+                        <div class="ltn__testimonial-item text-center">
+                            <div class="ltn__testimoni-img">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                            <div class="ltn__testimoni-info">
+                                <p>"Find Friends精美的UI设计尤其吸引我的眼球"</p>
+                                <h4>王女士 - <span>大二学生</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__testimonial-item text-center">
+                            <div class="ltn__testimoni-img">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                            <div class="ltn__testimoni-info">
+                                <p>"这是一个可以聊天、并且干净的App"</p>
+                                <h4>贺先生 - <span>程序员</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="ltn__testimonial-item text-center">
+                            <div class="ltn__testimoni-img">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                            <div class="ltn__testimoni-info">
+                                <p>"万福熊有着很不错的艺术修养"</p>
+                                <h4>任老师 - <span>教授</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TESTIMONIAL AREA END -->
+
+        <!-- FEATURE AREA START ( Feature - 3) -->
+        <div class="ltn__feature-area pt-110 pb-65" id="ltnr_feature_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area text-center">
+                            <h1 class="section-title">开发环境及项目本身</h1>
+                            <span class="ltn__separate-line">
+                                <span class="separate-icon">
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                </span>
+                            </span>
+                            <p>Find Friends是用来众多优秀的框架。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="ltn__feature-item ltn__feature-item-3">
+                            <div class="ltn__feature-icon">
+                                <svg t="1619717403880" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5953" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M880.3527418 108.8003999a415.40605488 415.40605488 0 0 1-48.03747803 85.19058545A450.25291406 450.25291406 0 0 0 513.20916318 62.00042188h-0.084375C265.6530292 62.00042188 62 265.62532607 62 513.15333506c0 123.49681699 50.62497627 241.67801162 140.14680908 326.89672207l16.64999209 14.73749297a449.01541494 449.01541494 0 0 0 290.61548877 106.11557578c235.32176426 0 433.12479697-184.16241386 449.88728907-418.94980401 12.29061885-114.94682138-21.45936533-260.29675283-78.97496221-433.15292197zM266.2999042 842.63755625c-7.28437148 8.9999956-18.36561622 14.25936797-30.00936094 14.25936797A38.78435654 38.78435654 0 0 1 197.73118672 818.28131768c0-21.14999033 17.43749209-38.61560654 38.55935654-38.61560742a38.69998154 38.69998154 0 0 1 29.95311094 63.08434599l0.05625-0.084375z m612.16846348-135.08431172C767.12154453 855.8281751 529.35290615 805.87819795 376.91547734 812.99381943c0 0-27.08436269 1.65937412-54.25309951 6.07499737 0 0 10.2093706-4.30312324 23.42811446-9.36562061 106.9874499-37.20935742 157.61242617-44.43747891 222.6373954-77.82183809 122.48431787-62.24059599 243.53426074-198.47803183 268.73424845-340.19984091C790.8027831 528.03145303 649.5028499 645.17202354 520.69040967 692.81575156c-88.22808369 32.51248506-247.61238398 64.12497012-247.61238399 64.12496924l-6.44062148-3.37499824c-108.53432403-52.79060039-111.79682227-287.69049053 85.41558457-363.51545449 86.37183457-33.21560918 169.0030459-14.99061797 262.26550195-37.20935742 99.59057842-23.62498857 214.79052393-98.3249543 261.67487783-195.7217836 52.50935039 155.78430205 115.67807051 399.68418779 2.47499913 550.43411748z" fill="#6DB33F" p-id="5954" data-spm-anchor-id="a313x.7781069.0.i1" class="selected"></path>
+                                </svg>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h5>基于Spring Boot</h5>
+                                <p>Find Friends服务端使用Java最流行的框架Spring Boot开发，高效、快速、简洁。</p>
+                            </div>
+                            <div class="ltn__feature-bg">
+                                <svg t="1619717403880" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5953" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M880.3527418 108.8003999a415.40605488 415.40605488 0 0 1-48.03747803 85.19058545A450.25291406 450.25291406 0 0 0 513.20916318 62.00042188h-0.084375C265.6530292 62.00042188 62 265.62532607 62 513.15333506c0 123.49681699 50.62497627 241.67801162 140.14680908 326.89672207l16.64999209 14.73749297a449.01541494 449.01541494 0 0 0 290.61548877 106.11557578c235.32176426 0 433.12479697-184.16241386 449.88728907-418.94980401 12.29061885-114.94682138-21.45936533-260.29675283-78.97496221-433.15292197zM266.2999042 842.63755625c-7.28437148 8.9999956-18.36561622 14.25936797-30.00936094 14.25936797A38.78435654 38.78435654 0 0 1 197.73118672 818.28131768c0-21.14999033 17.43749209-38.61560654 38.55935654-38.61560742a38.69998154 38.69998154 0 0 1 29.95311094 63.08434599l0.05625-0.084375z m612.16846348-135.08431172C767.12154453 855.8281751 529.35290615 805.87819795 376.91547734 812.99381943c0 0-27.08436269 1.65937412-54.25309951 6.07499737 0 0 10.2093706-4.30312324 23.42811446-9.36562061 106.9874499-37.20935742 157.61242617-44.43747891 222.6373954-77.82183809 122.48431787-62.24059599 243.53426074-198.47803183 268.73424845-340.19984091C790.8027831 528.03145303 649.5028499 645.17202354 520.69040967 692.81575156c-88.22808369 32.51248506-247.61238398 64.12497012-247.61238399 64.12496924l-6.44062148-3.37499824c-108.53432403-52.79060039-111.79682227-287.69049053 85.41558457-363.51545449 86.37183457-33.21560918 169.0030459-14.99061797 262.26550195-37.20935742 99.59057842-23.62498857 214.79052393-98.3249543 261.67487783-195.7217836 52.50935039 155.78430205 115.67807051 399.68418779 2.47499913 550.43411748z" fill="#6DB33F" p-id="5954" data-spm-anchor-id="a313x.7781069.0.i1" class="selected"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="ltn__feature-item ltn__feature-item-3 active">
+                            <div class="ltn__feature-icon">
+                                <svg t="1619717287952" class="icon" viewBox="0 0 1212 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2951" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="50">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M1046.13553227 390.22780871l74.16854528 21.55058062-69.16289308 20.30556728 47.32127004 19.81510884-49.81938062 9.31603798z" fill="#1A1A1A" p-id="2952"></path>
+                                    <path d="M350.45357415 252.0906604c-9.96684003 126.62616747 141.73205504 329.6454656 291.64831744 345.76595741 58.57893603 6.29917241 144.55489309-49.04461653 140.07877518-107.79063069-12.48381497-163.8485504-265.39660061-172.08261291-431.72709262-237.97532672z" p-id="2953"></path>
+                                    <path d="M84.09356932 720.72484067c164.14498247 182.96030777 459.76278926 265.41950749 674.75927382 176.86729045 179.36405277-73.87480861 295.66361941-312.19642141 295.72155846-501.21067179 0.0390747-129.44631011-129.6026112-276.67312981-321.52054329-215.98009798-86.20771214 27.26362681-151.98185245 113.86343765-207.53988039 192.52561806C401.37918311 538.15124195 291.30063834 649.1500726 84.09356932 720.72484067z" p-id="2954"></path>
+                                    <path d="M207.57082528 351.02741731c10.44382606 126.58843989 192.70078123 302.6877019 343.26380431 294.58838186 58.83224974-3.1650816 134.83462997-71.56398877 121.00609365-128.83458389-38.56575715-159.73488754-289.53287453-127.35242467-464.26989796-165.75379797z" p-id="2955"></path>
+                                    <path d="M623.80262703 251.35631928c52.17870734 4.66206151 144.3177472 21.18408306 217.02569301 25.68849636 59.67573333 3.69865842 130.18604203 2.09927509 179.3653999 1.0685019 35.61760995 61.05144547 38.50108131 126.14244466 28.44935395 183.10043875-104.86943175 17.56222805-182.95222272 4.61355463-268.51587072-22.73091811-77.84025543-24.87465757-155.04722603-62.35574386-211.0027412-124.81928192 24.95145984-35.50038471 33.44287971-43.16853248 54.67816506-62.30723698z" fill="#D40000" p-id="2956"></path>
+                                    <path d="M1011.21318874 400.49377507c-10.31582151 27.06016711-46.34169799 37.33556565-80.46637056 22.95054677-34.12467257-14.38501888-53.42641493-47.98285141-43.11059343-75.04301852 10.31447438-27.06016711 46.34035086-37.33691278 80.46637056-22.95054677 34.12467257 14.38501888 53.42506781 47.98150429 43.11059343 75.04301852z" fill="#FFFFFF" p-id="2957"></path>
+                                    <path d="M1007.67621991 397.22629005c-7.78402589 20.42279253-33.46039581 28.81585038-57.34739626 18.74660694-23.8870016-10.06924459-36.94077269-34.78894819-29.15539968-55.21174187 7.78402589-20.42144541 33.46039581-28.81450325 57.34739626-18.7452598 23.88834873 10.06924459 36.94211982 34.78760107 29.15674795 55.21039473z" fill="#1A1A1A" p-id="2958"></path>
+                                    <path d="M998.04892917 371.01364792c-2.75277255 7.21945827-11.50424291 10.32390542-19.54832042 6.93380551-8.04407751-3.39009991-12.33155641-11.99200711-9.58013099-19.21416078 2.75277255-7.21945827 11.50424291-10.32390542 19.5483193-6.93380551 8.04407751 3.39009991 12.33290354 11.99200711 9.58013211 19.21416078z" fill="#FFFFFF" p-id="2959"></path>
+                                    <path d="M1007.46332804 361.77980188c-13.1197952-8.1815131-23.99883719-19.4081883-37.05799794-27.69075769-12.57543907-8.48468195-25.54701824-16.66754333-39.64773262-22.36172516-6.18194717-2.13700267-12.36658973-4.2618789-18.51889322-6.48107463-4.2066341 1.00247779 0.7990181-2.75816221 1.67483846-4.15004217l12.77350912-14.25566834c5.52440832 0.72760547 10.40205597 3.77141931 15.78363791 5.0635924 14.55883605 5.96366563 27.71635883 14.77172793 40.87522987 23.2779685 12.92711481 8.7245221 24.98918741 18.72370119 38.02140102 27.26093254 3.85900089 0.72221582 3.65149867 3.40626887 0.67909746 5.0339476l-14.58309006 14.30282695z" fill="#1A1A1A" p-id="2960"></path>
+                                    <path d="M634.61699317 321.29936611c-25.15222528-0.87447325-54.42889273 2.25288078-73.70368682-21.0062245-16.97205931-18.59434837-30.78307954-41.74296519-39.68950272-66.97199388-1.54413966-18.32621283-1.56165575-40.71353913-18.29791744-49.42054514-19.31791133-12.26014379-42.14180067-10.49637547-63.26390329-13.88916964-39.8606245-2.65171627-77.83756117 13.96732018-114.99122574 28.66898262-17.63903033 6.92302621-39.32300515 5.65106461-52.25416249-12.01626112-10.07463424-11.55544405-16.19594695-26.51985351-22.55575268-40.84558621-9.31334371-9.27426787-9.87252167-23.68084651 2.70022201-27.52502556l23.22003058-15.7445632c11.89229909 25.73700437 20.93885326 58.80799687 46.01697053 70.27585934 25.74374115 6.51745394 49.62131058-10.98144541 73.89232582-18.06885661 34.40493454-13.09015154 71.1718912-15.06007495 106.70596096-8.11953265 20.46052125 2.15047737 45.22199495 11.02186723 51.40798464 37.39889436 1.80823267 22.87239623 5.93132771 45.15192946 19.60895261 62.32744847 12.94058837 23.24293632 31.91760441 45.39715925 56.82998955 46.3511313 8.24618894 3.23514709 35.23090091-3.37123669 32.25984797 4.5569627l-27.88748175 24.02847972z" fill="#D40000" p-id="2961"></path>
+                                    <path d="M617.7662005 309.23459811c-18.23728299-11.89364622-40.54780701-22.38597917-48.30488349-44.27880334-5.13769927-14.65854521-10.41553067-29.48147427-12.98640099-44.81777096-2.25422791-20.84318663 0.06198158-41.84671687-0.97687779-62.73571498 3.36045739-13.33133995-5.28456818-25.59552512-18.63477135-28.05590812-17.50024647-5.10131883-36.00970752-4.43030528-53.9519067-6.9014676-16.49237902-0.89872725-36.17544078 2.68944384-49.25616014-9.71487459-9.92237568-11.83166464-14.23141433-27.14505443-19.14813668-41.48156644-1.12778809-7.48759381 8.81614621-7.78672014 13.1373113-12.21433116l23.66198214-15.0129152c1.71121891 13.94845696 7.82849024 26.96719587 13.29630663 39.75417856 7.54553287 13.43374336 24.07294407 14.07511325 37.70745288 13.73825934 21.37945885 1.36089031 43.09442446 1.78128441 64.03058347 6.53092864 13.19794574 3.08288967 28.75117454 12.42722304 27.36333595 27.79046685 0.88929507 31.83136882-4.38314667 64.841728 6.5619183 95.53587768 4.52193053 13.73017543 8.96031971 28.55175737 21.1032394 37.6670299 9.10584149 8.44291186 20.55753501 13.98887879 30.70492785 20.72461426-8.31356018 7.27335481-18.92446549 12.75195051-28.11654144 19.37180786l-6.19137934 4.1001893z" fill="#D40000" p-id="2962"></path>
+                                </svg>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h5>Mybatis</h5>
+                                <p>有了Mybatis，使得免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作</p>
+                            </div>
+                            <div class="ltn__feature-bg">
+                                <svg t="1619717287952" class="icon" viewBox="0 0 1212 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2951" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="50">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M1046.13553227 390.22780871l74.16854528 21.55058062-69.16289308 20.30556728 47.32127004 19.81510884-49.81938062 9.31603798z" fill="#1A1A1A" p-id="2952"></path>
+                                    <path d="M350.45357415 252.0906604c-9.96684003 126.62616747 141.73205504 329.6454656 291.64831744 345.76595741 58.57893603 6.29917241 144.55489309-49.04461653 140.07877518-107.79063069-12.48381497-163.8485504-265.39660061-172.08261291-431.72709262-237.97532672z" p-id="2953"></path>
+                                    <path d="M84.09356932 720.72484067c164.14498247 182.96030777 459.76278926 265.41950749 674.75927382 176.86729045 179.36405277-73.87480861 295.66361941-312.19642141 295.72155846-501.21067179 0.0390747-129.44631011-129.6026112-276.67312981-321.52054329-215.98009798-86.20771214 27.26362681-151.98185245 113.86343765-207.53988039 192.52561806C401.37918311 538.15124195 291.30063834 649.1500726 84.09356932 720.72484067z" p-id="2954"></path>
+                                    <path d="M207.57082528 351.02741731c10.44382606 126.58843989 192.70078123 302.6877019 343.26380431 294.58838186 58.83224974-3.1650816 134.83462997-71.56398877 121.00609365-128.83458389-38.56575715-159.73488754-289.53287453-127.35242467-464.26989796-165.75379797z" p-id="2955"></path>
+                                    <path d="M623.80262703 251.35631928c52.17870734 4.66206151 144.3177472 21.18408306 217.02569301 25.68849636 59.67573333 3.69865842 130.18604203 2.09927509 179.3653999 1.0685019 35.61760995 61.05144547 38.50108131 126.14244466 28.44935395 183.10043875-104.86943175 17.56222805-182.95222272 4.61355463-268.51587072-22.73091811-77.84025543-24.87465757-155.04722603-62.35574386-211.0027412-124.81928192 24.95145984-35.50038471 33.44287971-43.16853248 54.67816506-62.30723698z" fill="#D40000" p-id="2956"></path>
+                                    <path d="M1011.21318874 400.49377507c-10.31582151 27.06016711-46.34169799 37.33556565-80.46637056 22.95054677-34.12467257-14.38501888-53.42641493-47.98285141-43.11059343-75.04301852 10.31447438-27.06016711 46.34035086-37.33691278 80.46637056-22.95054677 34.12467257 14.38501888 53.42506781 47.98150429 43.11059343 75.04301852z" fill="#FFFFFF" p-id="2957"></path>
+                                    <path d="M1007.67621991 397.22629005c-7.78402589 20.42279253-33.46039581 28.81585038-57.34739626 18.74660694-23.8870016-10.06924459-36.94077269-34.78894819-29.15539968-55.21174187 7.78402589-20.42144541 33.46039581-28.81450325 57.34739626-18.7452598 23.88834873 10.06924459 36.94211982 34.78760107 29.15674795 55.21039473z" fill="#1A1A1A" p-id="2958"></path>
+                                    <path d="M998.04892917 371.01364792c-2.75277255 7.21945827-11.50424291 10.32390542-19.54832042 6.93380551-8.04407751-3.39009991-12.33155641-11.99200711-9.58013099-19.21416078 2.75277255-7.21945827 11.50424291-10.32390542 19.5483193-6.93380551 8.04407751 3.39009991 12.33290354 11.99200711 9.58013211 19.21416078z" fill="#FFFFFF" p-id="2959"></path>
+                                    <path d="M1007.46332804 361.77980188c-13.1197952-8.1815131-23.99883719-19.4081883-37.05799794-27.69075769-12.57543907-8.48468195-25.54701824-16.66754333-39.64773262-22.36172516-6.18194717-2.13700267-12.36658973-4.2618789-18.51889322-6.48107463-4.2066341 1.00247779 0.7990181-2.75816221 1.67483846-4.15004217l12.77350912-14.25566834c5.52440832 0.72760547 10.40205597 3.77141931 15.78363791 5.0635924 14.55883605 5.96366563 27.71635883 14.77172793 40.87522987 23.2779685 12.92711481 8.7245221 24.98918741 18.72370119 38.02140102 27.26093254 3.85900089 0.72221582 3.65149867 3.40626887 0.67909746 5.0339476l-14.58309006 14.30282695z" fill="#1A1A1A" p-id="2960"></path>
+                                    <path d="M634.61699317 321.29936611c-25.15222528-0.87447325-54.42889273 2.25288078-73.70368682-21.0062245-16.97205931-18.59434837-30.78307954-41.74296519-39.68950272-66.97199388-1.54413966-18.32621283-1.56165575-40.71353913-18.29791744-49.42054514-19.31791133-12.26014379-42.14180067-10.49637547-63.26390329-13.88916964-39.8606245-2.65171627-77.83756117 13.96732018-114.99122574 28.66898262-17.63903033 6.92302621-39.32300515 5.65106461-52.25416249-12.01626112-10.07463424-11.55544405-16.19594695-26.51985351-22.55575268-40.84558621-9.31334371-9.27426787-9.87252167-23.68084651 2.70022201-27.52502556l23.22003058-15.7445632c11.89229909 25.73700437 20.93885326 58.80799687 46.01697053 70.27585934 25.74374115 6.51745394 49.62131058-10.98144541 73.89232582-18.06885661 34.40493454-13.09015154 71.1718912-15.06007495 106.70596096-8.11953265 20.46052125 2.15047737 45.22199495 11.02186723 51.40798464 37.39889436 1.80823267 22.87239623 5.93132771 45.15192946 19.60895261 62.32744847 12.94058837 23.24293632 31.91760441 45.39715925 56.82998955 46.3511313 8.24618894 3.23514709 35.23090091-3.37123669 32.25984797 4.5569627l-27.88748175 24.02847972z" fill="#D40000" p-id="2961"></path>
+                                    <path d="M617.7662005 309.23459811c-18.23728299-11.89364622-40.54780701-22.38597917-48.30488349-44.27880334-5.13769927-14.65854521-10.41553067-29.48147427-12.98640099-44.81777096-2.25422791-20.84318663 0.06198158-41.84671687-0.97687779-62.73571498 3.36045739-13.33133995-5.28456818-25.59552512-18.63477135-28.05590812-17.50024647-5.10131883-36.00970752-4.43030528-53.9519067-6.9014676-16.49237902-0.89872725-36.17544078 2.68944384-49.25616014-9.71487459-9.92237568-11.83166464-14.23141433-27.14505443-19.14813668-41.48156644-1.12778809-7.48759381 8.81614621-7.78672014 13.1373113-12.21433116l23.66198214-15.0129152c1.71121891 13.94845696 7.82849024 26.96719587 13.29630663 39.75417856 7.54553287 13.43374336 24.07294407 14.07511325 37.70745288 13.73825934 21.37945885 1.36089031 43.09442446 1.78128441 64.03058347 6.53092864 13.19794574 3.08288967 28.75117454 12.42722304 27.36333595 27.79046685 0.88929507 31.83136882-4.38314667 64.841728 6.5619183 95.53587768 4.52193053 13.73017543 8.96031971 28.55175737 21.1032394 37.6670299 9.10584149 8.44291186 20.55753501 13.98887879 30.70492785 20.72461426-8.31356018 7.27335481-18.92446549 12.75195051-28.11654144 19.37180786l-6.19137934 4.1001893z" fill="#D40000" p-id="2962"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-4 col-md-6 col-12">-->
+                    <!--    <div class="ltn__feature-item ltn__feature-item-3">-->
+                    <!--        <div class="ltn__feature-icon">-->
+                    <!--            <img th:src="@{/image/3.png}" alt="#">-->
+                    <!--        </div>-->
+                    <!--        <div class="ltn__feature-info">-->
+                    <!--            <h5>Easy To Use</h5>-->
+                    <!--            <p>Lorem ipsum dolor sit amet consecte adipisicing elit sed do eiusmod temp incididunt-->
+                    <!--                ut labore et.</p>-->
+                    <!--        </div>-->
+                    <!--        <div class="ltn__feature-bg">-->
+                    <!--            <img th:src="@{/image/3.png}" alt="#">-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-4 col-md-6 col-12">-->
+                    <!--    <div class="ltn__feature-item ltn__feature-item-3">-->
+                    <!--        <div class="ltn__feature-icon">-->
+                    <!--            <img th:src="@{/image/4.png}" alt="#">-->
+                    <!--        </div>-->
+                    <!--        <div class="ltn__feature-info">-->
+                    <!--            <h5>Unlimited Features</h5>-->
+                    <!--            <p>Lorem ipsum dolor sit amet consecte adipisicing elit sed do eiusmod temp incididunt-->
+                    <!--                ut labore et.</p>-->
+                    <!--        </div>-->
+                    <!--        <div class="ltn__feature-bg">-->
+                    <!--            <img th:src="@{/image/4.png}" alt="#">-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-4 col-md-6 col-12">-->
+                    <!--    <div class="ltn__feature-item ltn__feature-item-3">-->
+                    <!--        <div class="ltn__feature-icon">-->
+                    <!--            <img th:src="@{/image/5.png}" alt="#">-->
+                    <!--        </div>-->
+                    <!--        <div class="ltn__feature-info">-->
+                    <!--            <h5>High Resolution</h5>-->
+                    <!--            <p>Lorem ipsum dolor sit amet consecte adipisicing elit sed do eiusmod temp incididunt-->
+                    <!--                ut labore et.</p>-->
+                    <!--        </div>-->
+                    <!--        <div class="ltn__feature-bg">-->
+                    <!--            <img th:src="@{/image/5.png}" alt="#">-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="ltn__feature-item ltn__feature-item-3">
+                            <div class="ltn__feature-icon">
+                                <svg t="1619717659397" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15717" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M153.6 153.6m102.4 0l614.4 0q102.4 0 102.4 102.4l0 409.6q0 102.4-102.4 102.4l-614.4 0q-102.4 0-102.4-102.4l0-409.6q0-102.4 102.4-102.4Z" fill="#FFCD39" p-id="15718"></path>
+                                    <path d="M51.2 256m102.4 0l614.4 0q102.4 0 102.4 102.4l0 409.6q0 102.4-102.4 102.4l-614.4 0q-102.4 0-102.4-102.4l0-409.6q0-102.4 102.4-102.4Z" fill="#FF693A" p-id="15719" data-spm-anchor-id="a313x.7781069.0.i4" class="selected"></path>
+                                    <path d="M664.32 469.3504l62.0544 62.0544 41.3696 41.3696-41.3696 41.3696-62.0544 62.1056a29.2352 29.2352 0 1 1-41.3696-41.3696l62.0544-62.1056-62.0544-62.0544a29.2352 29.2352 0 1 1 41.3696-41.3696zM564.224 385.8432a30.72 30.72 0 0 1 11.264 41.984l-174.08 301.4656a30.72 30.72 0 0 1-53.248-30.72l174.08-301.4656a30.72 30.72 0 0 1 41.984-11.264zM257.024 469.3504L194.9696 531.456 153.6 572.7744l41.3696 41.3696 62.0544 62.1056a29.2352 29.2352 0 1 0 41.3696-41.3696l-62.0544-62.1056 62.0544-62.0544a29.2352 29.2352 0 0 0-41.3696-41.3696z" fill="#FFFFFF" p-id="15720"></path>
+                                </svg>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h5>整洁的代码</h5>
+                                <p>服务端与手机端的代码编写非常规范，易于阅读。</p>
+                            </div>
+                            <div class="ltn__feature-bg">
+                                <svg t="1619717659397" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15717" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M153.6 153.6m102.4 0l614.4 0q102.4 0 102.4 102.4l0 409.6q0 102.4-102.4 102.4l-614.4 0q-102.4 0-102.4-102.4l0-409.6q0-102.4 102.4-102.4Z" fill="#FFCD39" p-id="15718"></path>
+                                    <path d="M51.2 256m102.4 0l614.4 0q102.4 0 102.4 102.4l0 409.6q0 102.4-102.4 102.4l-614.4 0q-102.4 0-102.4-102.4l0-409.6q0-102.4 102.4-102.4Z" fill="#FF693A" p-id="15719" data-spm-anchor-id="a313x.7781069.0.i4" class="selected"></path>
+                                    <path d="M664.32 469.3504l62.0544 62.0544 41.3696 41.3696-41.3696 41.3696-62.0544 62.1056a29.2352 29.2352 0 1 1-41.3696-41.3696l62.0544-62.1056-62.0544-62.0544a29.2352 29.2352 0 1 1 41.3696-41.3696zM564.224 385.8432a30.72 30.72 0 0 1 11.264 41.984l-174.08 301.4656a30.72 30.72 0 0 1-53.248-30.72l174.08-301.4656a30.72 30.72 0 0 1 41.984-11.264zM257.024 469.3504L194.9696 531.456 153.6 572.7744l41.3696 41.3696 62.0544 62.1056a29.2352 29.2352 0 1 0 41.3696-41.3696l-62.0544-62.1056 62.0544-62.0544a29.2352 29.2352 0 0 0-41.3696-41.3696z" fill="#FFFFFF" p-id="15720"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FEATURE AREA END -->
+
+        <!-- PRICING PLAN AREA START -->
+        <!--<div class="ltn__pricing-plan-area pt-110 pb-70" id="ltnr_pricing">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="section-title-area text-center">-->
+        <!--                    <h1 class="section-title">Pricing Plan</h1>-->
+        <!--                    <span class="ltn__separate-line">-->
+        <!--                        <span class="separate-icon">-->
+        <!--                            <i class="zmdi zmdi-crop-square"></i>-->
+        <!--                            <i class="zmdi zmdi-crop-square"></i>-->
+        <!--                        </span>-->
+        <!--                    </span>-->
+        <!--                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do line</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right&#45;&#45; text-uppercase text-center">-->
+        <!--                    <div class="nav">-->
+        <!--                        <a data-toggle="tab" href="#ltnr_tab_3_1">Monthly</a>-->
+        <!--                        <a class="active show" data-toggle="tab" href="#ltnr_tab_3_2">Yearly</a>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="tab-content">-->
+        <!--                    <div class="tab-pane fade" id="ltnr_tab_3_1">-->
+        <!--                        <div class="ltn__product-tab-content-inner">-->
+        <!--                            <div class="row justify-content-center">-->
+        <!--                                <div class="col-lg-4 col-sm-6">-->
+        <!--                                    <div class="ltn__pricing-plan-item text-center">-->
+        <!--                                        <h3 class="pricing-title">Basic</h3>-->
+        <!--                                        <div class="pricing-price">-->
+        <!--                                            <h2><sup>$</sup>09<sub>/M</sub></h2>-->
+        <!--                                        </div>-->
+        <!--                                        <ul>-->
+        <!--                                            <li>12 Projects</li>-->
+        <!--                                            <li>5 GB Storage</li>-->
+        <!--                                            <li>5 Mail Marketing</li>-->
+        <!--                                            <li>10 Data Base</li>-->
+        <!--                                            <li>10 GB Bandwidth</li>-->
+        <!--                                            <li>Enhanced Security</li>-->
+        <!--                                        </ul>-->
+        <!--                                        <div class="btn-wrapper">-->
+        <!--                                            <a href="#" class="theme-btn-3 btn btn-round">PURCHASE</a>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-lg-4 col-sm-6">-->
+        <!--                                    <div class="ltn__pricing-plan-item text-center active-price">-->
+        <!--                                        <h3 class="pricing-title">Personal</h3>-->
+        <!--                                        <div class="pricing-price">-->
+        <!--                                            <h2><sup>$</sup>19<sub>/M</sub></h2>-->
+        <!--                                        </div>-->
+        <!--                                        <ul>-->
+        <!--                                            <li>12 Projects</li>-->
+        <!--                                            <li>5 GB Storage</li>-->
+        <!--                                            <li>5 Mail Marketing</li>-->
+        <!--                                            <li>10 Data Base</li>-->
+        <!--                                            <li>10 GB Bandwidth</li>-->
+        <!--                                            <li>Enhanced Security</li>-->
+        <!--                                        </ul>-->
+        <!--                                        <div class="btn-wrapper">-->
+        <!--                                            <a href="#" class="theme-btn-4 btn btn-round">PURCHASE</a>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-lg-4 col-sm-6">-->
+        <!--                                    <div class="ltn__pricing-plan-item text-center">-->
+        <!--                                        <h3 class="pricing-title">Business</h3>-->
+        <!--                                        <div class="pricing-price">-->
+        <!--                                            <h2><sup>$</sup>29<sub>/M</sub></h2>-->
+        <!--                                        </div>-->
+        <!--                                        <ul>-->
+        <!--                                            <li>12 Projects</li>-->
+        <!--                                            <li>5 GB Storage</li>-->
+        <!--                                            <li>5 Mail Marketing</li>-->
+        <!--                                            <li>10 Data Base</li>-->
+        <!--                                            <li>10 GB Bandwidth</li>-->
+        <!--                                            <li>Enhanced Security</li>-->
+        <!--                                        </ul>-->
+        <!--                                        <div class="btn-wrapper">-->
+        <!--                                            <a href="#" class="theme-btn-3 btn btn-round">PURCHASE</a>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                    <div class="tab-pane fade active show" id="ltnr_tab_3_2">-->
+        <!--                        <div class="ltn__product-tab-content-inner">-->
+        <!--                            <div class="row justify-content-center">-->
+        <!--                                <div class="col-lg-4 col-sm-6">-->
+        <!--                                    <div class="ltn__pricing-plan-item text-center">-->
+        <!--                                        <h3 class="pricing-title">Basic</h3>-->
+        <!--                                        <div class="pricing-price">-->
+        <!--                                            <h2><sup>$</sup>49<sub>/Y</sub></h2>-->
+        <!--                                        </div>-->
+        <!--                                        <ul>-->
+        <!--                                            <li>12 Projects</li>-->
+        <!--                                            <li>5 GB Storage</li>-->
+        <!--                                            <li>5 Mail Marketing</li>-->
+        <!--                                            <li>10 Data Base</li>-->
+        <!--                                            <li>10 GB Bandwidth</li>-->
+        <!--                                            <li>Enhanced Security</li>-->
+        <!--                                        </ul>-->
+        <!--                                        <div class="btn-wrapper">-->
+        <!--                                            <a href="#" class="theme-btn-3 btn btn-round">PURCHASE</a>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-lg-4 col-sm-6">-->
+        <!--                                    <div class="ltn__pricing-plan-item text-center active-price">-->
+        <!--                                        <h3 class="pricing-title">Personal</h3>-->
+        <!--                                        <div class="pricing-price">-->
+        <!--                                            <h2><sup>$</sup>59<sub>/Y</sub></h2>-->
+        <!--                                        </div>-->
+        <!--                                        <ul>-->
+        <!--                                            <li>12 Projects</li>-->
+        <!--                                            <li>5 GB Storage</li>-->
+        <!--                                            <li>5 Mail Marketing</li>-->
+        <!--                                            <li>10 Data Base</li>-->
+        <!--                                            <li>10 GB Bandwidth</li>-->
+        <!--                                            <li>Enhanced Security</li>-->
+        <!--                                        </ul>-->
+        <!--                                        <div class="btn-wrapper">-->
+        <!--                                            <a href="#" class="theme-btn-4 btn btn-round">PURCHASE</a>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-lg-4 col-sm-6">-->
+        <!--                                    <div class="ltn__pricing-plan-item text-center">-->
+        <!--                                        <h3 class="pricing-title">Business</h3>-->
+        <!--                                        <div class="pricing-price">-->
+        <!--                                            <h2><sup>$</sup>69<sub>/Y</sub></h2>-->
+        <!--                                        </div>-->
+        <!--                                        <ul>-->
+        <!--                                            <li>12 Projects</li>-->
+        <!--                                            <li>5 GB Storage</li>-->
+        <!--                                            <li>5 Mail Marketing</li>-->
+        <!--                                            <li>10 Data Base</li>-->
+        <!--                                            <li>10 GB Bandwidth</li>-->
+        <!--                                            <li>Enhanced Security</li>-->
+        <!--                                        </ul>-->
+        <!--                                        <div class="btn-wrapper">-->
+        <!--                                            <a href="#" class="theme-btn-3 btn btn-round">PURCHASE</a>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!-- PRICING PLAN AREA END -->
+
+        <!-- CALL TO ACTION START (Newsletter - 2) -->
+        <!--<div class="ltn__newsletter-area section-bg-3 bg-image pt-110 pb-90" data-bg="img/bg/5.jpg">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-8 offset-lg-2">-->
+        <!--                <div class="ltn__newsletter-inner ltn__newsletter-inner-4 text-center">-->
+        <!--                    <h1>订阅我们的新闻</h1>-->
+        <!--                    <form action="#" class="ltn__form-box">-->
+        <!--                        <input type="email" name="email" placeholder="Email*">-->
+        <!--                        <div class="btn-wrapper">-->
+        <!--                            <button class="theme-btn-1 btn btn-transparent" type="submit"><i-->
+        <!--                                    class="zmdi zmdi-long-arrow-right"></i></button>-->
+        <!--                        </div>-->
+        <!--                    </form>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!-- CALL TO ACTION END -->
+
+        <!-- BLOG AREA START (blog-2) -->
+        <!--<div class="ltn__blog-area ltn__blog-2 pt-110 pb-90" id="ltnr_blog">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="section-title-area text-center">-->
+        <!--                    <h1 class="section-title">Latest News</h1>-->
+        <!--                    <span class="ltn__separate-line">-->
+        <!--                        <span class="separate-icon">-->
+        <!--                            <i class="zmdi zmdi-crop-square"></i>-->
+        <!--                            <i class="zmdi zmdi-crop-square"></i>-->
+        <!--                        </span>-->
+        <!--                    </span>-->
+        <!--                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do line</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="row  ltn__blog-slider-one-active slick-arrow-1">-->
+        <!--            &lt;!&ndash; blog-item &ndash;&gt;-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="ltn__blog-item ltn__blog-item-3">-->
+        <!--                    <div class="ltn__blog-img">-->
+        <!--                        <a href="blog-details.html" tabindex="0"><img th:src="@{/image/1.jpg}" alt="#"></a>-->
+        <!--                    </div>-->
+        <!--                    <div class="ltn__blog-brief">-->
+        <!--                        <div class="ltn__blog-meta">-->
+        <!--                            <ul>-->
+        <!--                                <li class="ltn__blog-author">-->
+        <!--                                    <a href="#" tabindex="0"><i class="far fa-user"></i>by: Admin</a>-->
+        <!--                                </li>-->
+        <!--                                <li class="ltn__blog-tags">-->
+        <!--                                    <a href="#" tabindex="0"><i class="fas fa-tags"></i>Services</a>-->
+        <!--                                </li>-->
+        <!--                            </ul>-->
+        <!--                        </div>-->
+        <!--                        <h3 class="ltn__blog-title animated fadeIn"><a href="blog-details.html"-->
+        <!--                                tabindex="0">Lorem ipsum dolor sit ame conse ctetur adipis.</a></h3>-->
+        <!--                        <div class="ltn__blog-meta-btn">-->
+        <!--                            <div class="ltn__blog-meta">-->
+        <!--                                <ul>-->
+        <!--                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01,-->
+        <!--                                        2021</li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                            <div class="ltn__blog-btn">-->
+        <!--                                <a href="blog-details.html" tabindex="0">Read more</a>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash; blog-item &ndash;&gt;-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="ltn__blog-item ltn__blog-item-3">-->
+        <!--                    <div class="ltn__blog-img">-->
+        <!--                        <a href="blog-details.html" tabindex="0"><img th:src="@{/image/2.jpg}" alt="#"></a>-->
+        <!--                    </div>-->
+        <!--                    <div class="ltn__blog-brief">-->
+        <!--                        <div class="ltn__blog-meta">-->
+        <!--                            <ul>-->
+        <!--                                <li class="ltn__blog-author">-->
+        <!--                                    <a href="#" tabindex="0"><i class="far fa-user"></i>by: Admin</a>-->
+        <!--                                </li>-->
+        <!--                                <li class="ltn__blog-tags">-->
+        <!--                                    <a href="#" tabindex="0"><i class="fas fa-tags"></i>Services</a>-->
+        <!--                                </li>-->
+        <!--                            </ul>-->
+        <!--                        </div>-->
+        <!--                        <h3 class="ltn__blog-title animated fadeIn"><a href="blog-details.html"-->
+        <!--                                tabindex="0">Lorem ipsum dolor sit ame conse ctetur adipis.</a></h3>-->
+        <!--                        <div class="ltn__blog-meta-btn">-->
+        <!--                            <div class="ltn__blog-meta">-->
+        <!--                                <ul>-->
+        <!--                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 02,-->
+        <!--                                        2021</li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                            <div class="ltn__blog-btn">-->
+        <!--                                <a href="blog-details.html" tabindex="0">Read more</a>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash; blog-item &ndash;&gt;-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="ltn__blog-item ltn__blog-item-3">-->
+        <!--                    <div class="ltn__blog-img">-->
+        <!--                        <a href="blog-details.html" tabindex="0"><img th:src="@{/image/3.jpg}" alt="#"></a>-->
+        <!--                    </div>-->
+        <!--                    <div class="ltn__blog-brief">-->
+        <!--                        <div class="ltn__blog-meta">-->
+        <!--                            <ul>-->
+        <!--                                <li class="ltn__blog-author">-->
+        <!--                                    <a href="#" tabindex="0"><i class="far fa-user"></i>by: Admin</a>-->
+        <!--                                </li>-->
+        <!--                                <li class="ltn__blog-tags">-->
+        <!--                                    <a href="#" tabindex="0"><i class="fas fa-tags"></i>Services</a>-->
+        <!--                                </li>-->
+        <!--                            </ul>-->
+        <!--                        </div>-->
+        <!--                        <h3 class="ltn__blog-title animated fadeIn"><a href="blog-details.html"-->
+        <!--                                tabindex="0">Lorem ipsum dolor sit ame conse ctetur adipis.</a></h3>-->
+        <!--                        <div class="ltn__blog-meta-btn">-->
+        <!--                            <div class="ltn__blog-meta">-->
+        <!--                                <ul>-->
+        <!--                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 03,-->
+        <!--                                        2021</li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                            <div class="ltn__blog-btn">-->
+        <!--                                <a href="blog-details.html" tabindex="0">Read more</a>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash; blog-item &ndash;&gt;-->
+        <!--            <div class="col-lg-12">-->
+        <!--                <div class="ltn__blog-item ltn__blog-item-3">-->
+        <!--                    <div class="ltn__blog-img">-->
+        <!--                        <a href="blog-details.html" tabindex="0"><img th:src="@{/image/2.jpg}" alt="#"></a>-->
+        <!--                    </div>-->
+        <!--                    <div class="ltn__blog-brief">-->
+        <!--                        <div class="ltn__blog-meta">-->
+        <!--                            <ul>-->
+        <!--                                <li class="ltn__blog-author">-->
+        <!--                                    <a href="#" tabindex="0"><i class="far fa-user"></i>by: Admin</a>-->
+        <!--                                </li>-->
+        <!--                                <li class="ltn__blog-tags">-->
+        <!--                                    <a href="#" tabindex="0"><i class="fas fa-tags"></i>Services</a>-->
+        <!--                                </li>-->
+        <!--                            </ul>-->
+        <!--                        </div>-->
+        <!--                        <h3 class="ltn__blog-title animated fadeIn"><a href="blog-details.html"-->
+        <!--                                tabindex="0">Lorem ipsum dolor sit ame conse ctetur adipis.</a></h3>-->
+        <!--                        <div class="ltn__blog-meta-btn">-->
+        <!--                            <div class="ltn__blog-meta">-->
+        <!--                                <ul>-->
+        <!--                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01,-->
+        <!--                                        2021</li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                            <div class="ltn__blog-btn">-->
+        <!--                                <a href="blog-details.html" tabindex="0">Read more</a>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash;  &ndash;&gt;-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!-- BLOG AREA END -->
+
+        <!-- CONTACT MESSAGE AREA START -->
+        <div class="ltn__contact-message-area bg-image bg-overlay-black-30 pt-110 pb-120"
+            id="ltnr_contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area text-center">
+                            <h1 class="section-title white-color">联系我</h1>
+                            <span class="ltn__separate-line ltn__separate-line-white">
+                                <span class="separate-icon">
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                    <i class="zmdi zmdi-crop-square"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ltn__form-box contact-form-box box-shadow white-bg">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <form id="contact-form" action="mail.php" method="post">
+                                        <input type="text" name="name" placeholder="姓名*">
+                                        <input type="email" name="email" placeholder="Email*">
+                                        <textarea name="message" placeholder="说点什么吧"></textarea>
+                                        <label class="mb-0 d-none"><input type="checkbox" name="agree">保存我的姓名和Email以便下次使用</label>
+                                        <div class="btn-wrapper mt-0">
+                                            <button class="theme-btn-1 btn" type="submit">提交</button>
+                                        </div>
+                                        <p class="form-messege mb-0 mt-20"></p>
+                                    </form>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="contact-address-2 section-bg-1">
+                                        <div class="ltn__contact-address-item ltn__contact-address-item-2">
+                                            <i class="zmdi zmdi-headset-mic"></i>
+                                            <h5 class="text-uppercase">telephones</h5>
+                                            <p><a href="tel:0123456789">+86-13072191318</a></p>
+                                        </div>
+                                        <div class="ltn__contact-address-item ltn__contact-address-item-2">
+                                            <i class="zmdi zmdi-email-open"></i>
+                                            <h5 class="text-uppercase">email Address </h5>
+                                            <p><a href="mailto:example@example.com">fx_wan@foxmai.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT MESSAGE AREA END -->
+
+        <!-- FOOTER AREA START -->
+        <footer class="ltn__footer-area">
+            <div class="ltn__copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="copyright-info">
+                                <span>Copyright &copy; 2021.Wan Fuxiong All rights reserved. <a target="_blank"
+                                        href="http://www.wanfuxiong.com/">wanfuxiong.com</a></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="ltn__social-media footer-social text-right">
+                                <ul>
+                                    <li><a href="#" title="QQ"><i class="zmdi zmdi-qq"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER AREA END -->
+
+    </div>
+    <!-- 主体 结束 -->
+
+    <!-- All JS Plugins -->
+    <script th:src="@{/js/plugins.js}"></script>
+    <!-- Contact Form -->
+    <script th:src="@{/js/contact.js}"></script>
+    <!-- Main JS -->
+    <script th:src="@{/js/main.js}"></script>
+
+</body>
+
+</html>

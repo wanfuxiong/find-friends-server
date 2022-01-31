@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Friends</title>
+
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+
+<body>
+    <table cellspacing="10" cellpadding="10" border="0">
+        <tbody>
+            <tr>
+                <td th:replace="~{commons/commons::menucolumn(active='home')}"></td>
+
+                <td valign="top">
+
+                    <table cellspacing="4" cellpadding="4">
+                        <tbody>
+                        <tr>
+
+                            <td>
+
+                                <h1>Find Friends</h1>
+
+                                <p><b>Find Friends</b> 是一个简单的社交app，当前共有<b th:text="${userAmount}"></b>个用户。</p>
+
+                                <p><b>为您的手机安装 Find Friends V1.0.0</b>:</p>
+                                <table cellspacing="1" cellpadding="6" border="0">
+                                    <tbody>
+                                    <tr>
+                                        <th class="Title" align="center" width="60">链接</th>
+                                        <th class="Title" align="center" width="60">文件类型</th>
+                                        <th class="Title" align="center" width="124">系统</th>
+                                        <th class="Title" align="center" width="70">大小</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="Item" align="center"><a th:href="@{/download}">下载</a></td>
+                                        <td class="Item" align="center">.apk</td>
+                                        <td class="Item" align="center">Android 6.0+</td>
+<!--                                        <td class="Item" align="center" th:text="${apkSize}"></td>-->
+                                        <td class="Item" align="center" text="apkSize"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <br>
+
+                                <p><b>为您的手机安装 Find Friends V2.0.0 beta</b>:</p>
+                                <table cellspacing="1" cellpadding="6" border="0">
+                                    <tbody>
+                                    <tr>
+                                        <th class="Title" align="center" width="60">链接</th>
+                                        <th class="Title" align="center" width="60">文件类型</th>
+                                        <th class="Title" align="center" width="124">系统</th>
+                                        <th class="Title" align="center" width="70">大小</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="Item" align="center"><a th:href="@{/download}">下载</a></td>
+                                        <td class="Item" align="center">.apk</td>
+                                        <td class="Item" align="center">Android 6.0+</td>
+                                        <td class="Item" align="center">7 MB</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <br>
+
+                                <h2>证书</h2>
+
+                                <p><b>Find Friends</b> 是 <b>免费</b> 并 <b>开源</b> 的。</p>
+
+                                <p>你可以在任何安卓手机上使用Find Friends，并且不需要支付费用</p>
+
+                                <br>
+
+                                <h2>Find Friends的特点</h2>
+                                <ul>
+                                    <li>免费</li>
+                                    <!--<li>Supported formats:-->
+                                    <!--    <ul>-->
+                                    <!--        <li>Packing / unpacking: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM</li>-->
+                                    <!--        <li>Unpacking only: AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT, GPT,-->
+                                    <!--            HFS,-->
+                                    <!--            IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2, RAR,-->
+                                    <!--            RPM, SquashFS, UDF, UEFI, VDI, VHD, VMDK, WIM, XAR and Z.</li>-->
+                                    <!--    </ul>-->
+                                    <!--</li>-->
+                                    <li>开源</li>
+                                    <li>高性能</li>
+                                    <li>高颜值</li>
+                                    <li>可聊天</li>
+                                    <li>多语言</li>
+                                </ul>
+
+                                <p><b>Find Friends</b> 必须在安卓6.0及其以上版本的系统中使用</p>
+
+                                <br>
+
+                                <h2>对比</h2>
+
+                                <p>我们把 <b>Find Friends</b> 和XXX进行对比</p>
+
+                                <!--<p><b>FILE SETS:</b> Mozilla Firefox 34.0.5 for Windows and Google Earth 6.2.2.6613-->
+                                <!--    for Windows.</p>-->
+
+                                <table cellspacing="2" cellpadding="6">
+                                    <tbody>
+                                    <tr>
+                                        <th class="Title" rowspan="3">软件</th>
+                                        <th class="Title" align="center" colspan="2">Find Friends</th>
+                                        <th class="Title" align="center" colspan="2">XXX</th>
+                                    </tr>
+                                    <tr>
+<!--                                        <th class="Title" align="center" colspan="2" th:text="${apkSizeLong}+bytes"></th>-->
+                                        <th class="Title" align="center" colspan="2" text="10240bytes"></th>
+                                        <th class="Title" align="center" colspan="2">999999999bytes</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="Title" align="center">参数名</th>
+                                        <th class="Title" align="center">值</th>
+                                        <th class="Title" align="center">参数名</th>
+                                        <th class="Title" align="center">值</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="Item"><b>Find Friends<br> V1.0.0</b></td>
+                                        <td class="Item" align="center"><b>xxx</b></td>
+                                        <td class="Item" align="center"><b>100%</b></td>
+                                        <td class="Item" align="center"><b>xxx</b></td>
+                                        <td class="Item" align="center"><b>100%</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Item">XXX<br></td>
+                                        <td class="Item" align="center">xxx</td>
+                                        <td class="Item" align="center">106%</td>
+                                        <td class="Item" align="center">xxx</td>
+                                        <td class="Item" align="center">107%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <p>对比结果非常明显 <b>Find Friends</b> 比XXX有着更高的效率。并且拥有与XXX同样的功能已经炫酷的界面。所以，选择使用Find Friends是您的不二选择。</p>
+
+                            </td>
+
+
+                            <td valign="top" align="right" width="210">
+
+
+                                <table class="News" cellpadding="3" cellspacing="1" border="0">
+                                    <tbody>
+                                    <tr class="NewsHeader">
+                                        <td class="NewsTitle">Find Friends V1.0.0</td>
+                                        <td class="NewsDate">2021-04-20</td>
+                                    </tr>
+                                    <tr class="News">
+                                        <td class="NewsText" colspan="2">
+                                            <a href="">Find Friends V1.0.0</a><br>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <br>
+
+                                <table class="News" cellpadding="3" cellspacing="1" border="0">
+                                    <tbody>
+                                    <tr class="NewsHeader">
+                                        <td class="NewsTitle">Find Friends 更早测试版本</td>
+                                        <td class="NewsDate">2021-01-01</td>
+                                    </tr>
+                                    <tr class="News">
+                                        <td class="NewsText" colspan="2">
+                                            <a href="">暂不支持开放下载</a><br>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <br>
+
+                                <!--<table class="News" cellpadding="3" cellspacing="1" border="0">-->
+                                <!--    <tbody>-->
+                                <!--    <tr class="NewsHeader">-->
+                                <!--        <td class="NewsTitle">Find Friends V0.0.8</td>-->
+                                <!--        <td class="NewsDate">2021-02-09</td>-->
+                                <!--    </tr>-->
+                                <!--    <tr class="News">-->
+                                <!--        <td class="NewsText" colspan="2">-->
+                                <!--            <a href="">Find Friends V0.0.8</a><br>-->
+                                <!--        </td>-->
+                                <!--    </tr>-->
+                                <!--    </tbody>-->
+                                <!--</table>-->
+
+                                <!--<br>-->
+
+                                <!--<table class="News" cellpadding="3" cellspacing="1" border="0">-->
+                                <!--    <tbody>-->
+                                <!--    <tr class="NewsHeader">-->
+                                <!--        <td class="NewsTitle">7-Zip 20.02</td>-->
+                                <!--        <td class="NewsDate">2020-08-08</td>-->
+                                <!--    </tr>-->
+                                <!--    <tr class="News">-->
+                                <!--        <td class="NewsText" colspan="2">-->
+                                <!--            <a-->
+                                <!--                    href="https://sourceforge.net/p/sevenzip/discussion/45797/thread/9dbfea1e30/">7-Zip-->
+                                <!--                20.02 alpha</a><br>-->
+                                <!--        </td>-->
+                                <!--    </tr>-->
+                                <!--    </tbody>-->
+                                <!--</table>-->
+
+                                <!--<br>-->
+
+                                <!--<table class="News" cellpadding="3" cellspacing="1" border="0">-->
+                                <!--    <tbody>-->
+                                <!--    <tr class="NewsHeader">-->
+                                <!--        <td class="NewsTitle">7-Zip for ARM64</td>-->
+                                <!--        <td class="NewsDate">2020-08-08</td>-->
+                                <!--    </tr>-->
+                                <!--    <tr class="News">-->
+                                <!--        <td class="NewsText" colspan="2">-->
+                                <!--            <a-->
+                                <!--                    href="https://sourceforge.net/p/sevenzip/discussion/45797/thread/7d5b1e5b51/">7-Zip-->
+                                <!--                for ARM64</a><br>-->
+                                <!--        </td>-->
+                                <!--    </tr>-->
+                                <!--    </tbody>-->
+                                <!--</table>-->
+
+                                <!--<br>-->
+
+                                <!--<table class="News" cellpadding="3" cellspacing="1" border="0">-->
+                                <!--    <tbody>-->
+                                <!--    <tr class="NewsHeader">-->
+                                <!--        <td class="NewsTitle">7-Zip 19.00</td>-->
+                                <!--        <td class="NewsDate">2019-02-21</td>-->
+                                <!--    </tr>-->
+                                <!--    <tr class="News">-->
+                                <!--        <td class="NewsText" colspan="2">-->
+                                <!--            <a-->
+                                <!--                    href="https://sourceforge.net/p/sevenzip/discussion/45797/thread/5e7d81bb39/">7-Zip-->
+                                <!--                19.00</a><br>-->
+                                <!--        </td>-->
+                                <!--    </tr>-->
+                                <!--    </tbody>-->
+                                <!--</table>-->
+
+
+                                <br>
+
+                                <br>
+
+                                <br>
+
+                                <!--<table class="News" cellpadding="3" cellspacing="1" border="0">-->
+                                <!--    <tbody>-->
+                                <!--    <tr class="NewsHeader">-->
+                                <!--        <td class="NewsTitle" colspan="2">7-Zip ChangeLog</td>-->
+                                <!--    </tr>-->
+                                <!--    <tr class="News">-->
+                                <!--        <td class="NewsText" colspan="2">-->
+                                <!--            <a href="https://www.7-zip.org/history.txt">History of 7-zip-->
+                                <!--                changes</a><br>-->
+                                <!--        </td>-->
+                                <!--    </tr>-->
+                                <!--    </tbody>-->
+                                <!--</table>-->
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <hr>
+
+                    <p th:replace="~{commons/commons::footer}"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

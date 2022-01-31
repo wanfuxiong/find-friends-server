@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Friends 项目简介</title>
+
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+
+<body>
+    <table cellspacing="10" cellpadding="10" border="0">
+        <tbody>
+            <tr>
+                <td th:replace="~{commons/commons::menucolumn(active='intro')}"></td>
+
+                <td valign="top">
+
+                    <table cellspacing="4" cellpadding="4">
+                        <tbody>
+                        <tr>
+
+                            <td>
+                                <h1>项目简介</h1>
+
+                                <p><b>Find Friends</b> 是一款带有聊天功能的社交app，作者是 <a th:href="@{/author}" class="author">万福熊</a>。
+                                    <b>Find Friends</b> 拥有作者精心设计的界面，以紫色、白色调为主。
+                                    系统会根据您所填写的兴趣，匹配兴趣相同的好友展示在主页上，您可以直接点击他们进行聊天，
+                                    也可以通过兴趣或FF号搜索任何兴趣的好友后进行聊天。除此之外，该app支持多语言切换。
+                                </p>
+
+                                <img class="demo" th:src="@{/image/demo01.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo02.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo03.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo04.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo05.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo06.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo07.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo08.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo09.jpg}" alt="">
+                                <img class="demo" th:src="@{/image/demo10.jpg}" alt="">
+
+                                <br>
+
+                                <h2><b>服务端与安卓客户端开发环境</b></h2>
+                                <ul>
+                                    <li>macOS BigSur</li>
+                                    <li>CPU：Intel Core i3 11th</li>
+                                    <li>内存：8GB</li>
+                                    <li>硬盘：256GB固态</li>
+                                </ul>
+
+                                <br>
+
+                                <h2><b>相关工具及框架</b></h2>
+                                <ul>
+                                    <li>JetBrains IntelliJ Idea 2021.1（服务端）</li>
+                                    <li>Android Sutdio 4.1.3（安卓端）</li>
+                                    <li>maven 3.6.3</li>
+                                    <li>Spring Boot 2.4.3</li>
+                                    <li>Mybatis 2.1.4</li>
+                                    <li>MySQL 5.7.31</li>
+                                    <li>……</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <hr>
+
+                    <p th:replace="~{commons/commons::footer}"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

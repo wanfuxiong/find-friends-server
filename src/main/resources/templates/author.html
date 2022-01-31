@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Friends 作者简介</title>
+
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+
+<body>
+    <table cellspacing="10" cellpadding="10" border="0">
+        <tbody>
+            <tr>
+                <td th:replace="~{commons/commons::menucolumn(active='author')}"></td>
+
+                <td valign="top">
+
+                    <table cellspacing="4" cellpadding="4">
+                        <tbody>
+                        <tr>
+
+                            <td>
+                                <h1>作者简介</h1>
+
+                                <p><b>Find Friends</b> 的作者是 <a th:href="@{/author}" class="author">万福熊</a>。
+                                    <a th:href="@{/author}" class="author">万福熊</a> 毕业于
+                                    <a href="https://www.chd.edu.cn/" target="_blank">长安大学</a>网络工程专业，
+                                    主攻Java语言，热衷于编写安卓app。职业为全栈工程师。
+                                </p>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <hr>
+
+                    <p th:replace="~{commons/commons::footer}"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

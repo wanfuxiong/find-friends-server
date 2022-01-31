@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # url: jdbc:mysql://localhost:3306/find_friends     这样插入中文数据会显示问号，除此之外也可能是数据库设置不正确
+    url: jdbc:mysql://localhost:3306/find_friends?useSSL=true&userUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+  thymeleaf:
+    cache: false
+  messages:
+    basename: i18n.menu
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.wanfuxiong.findfriends.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8081
+
+#IMConfig:
+#  sdkAppId: 1400463856
+#  secretKey: 24ed955c886cf2a220f6f592f8503c35fef727bd35e842aa7839a4c41b07ac9b
